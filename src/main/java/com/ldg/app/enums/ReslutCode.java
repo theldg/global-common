@@ -28,7 +28,12 @@ public enum ReslutCode {
     /**
      * 服务器出现异常
      */
-    ServerException(500, "服务器异常");
+    ServerException(500, "服务器异常"),
+
+    /**
+     *
+     */
+    BadRequest(400, "请求不合法");
     private Integer code;
     private String msg;
 
